@@ -1,0 +1,51 @@
+@font-face {
+  font-family: "Fira Code";
+  src: url(./font/FiraCode-Bold.ttf);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+}
+
+.wrapper {
+  height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+
+  font-family: "Fira Code";
+  font-weight: 700;
+  font-size: 180px;
+
+  user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+}
+
+@media screen and (max-width: 992px) {
+  .wrapper {
+    font-size: 120px;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .wrapper {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .wrapper {
+    font-size: 60px;
+  }
+}
